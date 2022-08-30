@@ -1,0 +1,241 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .banner {
+    height: 85vh !important;
+    width: 100%;
+    position: relative;
+    
+  }
+  .bgImg {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+  .home__content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 5%;
+    display: flex;
+    width: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 10;
+  }
+  
+  .container {
+    display: flex;
+    margin: 2vmax auto;
+    width: 80vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+  }
+  h1.discountPrice {
+    font-size: 1vmax;
+    text-decoration: line-through;
+    padding-left: 10px;
+  }
+
+  img.ProductImg {
+    width: 14vmax;
+  }
+  .ProductCard > div {
+    margin: 0.5vmax;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .ProductCard > div > span {
+    margin: 0.5vmax;
+    font: 300 0.7vmax "Roboto";
+  }
+  .productName {
+    font-family: "Roboto";
+    font-size: 1.2vmax;
+    margin: 1vmax 0.5vmax;
+    color: #000;
+    margin-bottom: 0;
+  }
+
+  @media screen and (max-width: 600px) {
+    .ProductCard > p {
+      font-size: 1.7vmax;
+    }
+    .ProductCard > div {
+      margin: 0vmax;
+      display: block;
+    }
+    .ProductCard > span {
+      font-size: 1.5vmax;
+    }
+    .ProductCard > div > span {
+      margin: 0 0.5vmax;
+      font: 300 1vmax "Roboto";
+    }
+  }
+  .banner {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+  
+  }
+  .bgImg {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  /* .vermas { 
+   background-color: greenyellow;
+    
+    color: black;
+    font-size: 20px;
+    width: 120px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: solid greenyellow;
+    margin-top: 2rem; 
+
+  } */
+  .vermas:hover {
+    background-color: black ;
+    color: greenyellow;
+    width: 130px;
+    height: 45px;
+    font-size: 22px;
+    box-shadow: 0 0 6px #88D317;
+  }
+
+  .container {
+    display: flex;
+    margin: 2vmax auto;
+    width: 80vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .ProductCard > p {
+      font-size: 1.7vmax;
+    }
+    .ProductCard > div {
+      margin: 0vmax;
+      display: block;
+    }
+    .ProductCard > span {
+      font-size: 1.5vmax;
+    }
+    .ProductCard > div > span {
+      margin: 0 0.5vmax;
+      font: 300 1vmax "Roboto";
+    }
+  }
+
+@media (max-width: 650px) {
+  .home__content {
+    align-items: start;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS */
+.button-85 {
+  margin: 20px;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  font-size: 15px;
+  width: 140px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
